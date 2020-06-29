@@ -9,40 +9,39 @@ import '../scss/main.scss';
 
 // localStorage.removeItem
 
-const entry = localStorage.getItem("local");
-
+const entry = localStorage.getItem("entry");
+console.log(entry);
 let result = "";
 
 if (entry) {
     result = entry;
 }
 
+
+
 const editor__content = document.querySelector(".editor__content--js");
 editor__content.value = result;
 
+console.log(editor__content.value);
+
 const btn = document.querySelector(".btn--js");
-console.log("btn--js");
+console.log(btn);
 
 btn.addEventListener('click', () => {
-    sessionStorage.setItem('entry', editor__content.value);
+    localStorage.setItem('entry', editor__content.value);
 })
 
 
-const load = localStorage.getItem("entry");
+console.log(entry);
 
-console.log(load);
+const loadStarage = localStorage.getItem("entry");
 
-let resultLoad = "";
+console.log(loadStarage);
 
-if (entry) {
-    resultLoad = entry;
-}
+const load = document.querySelector(".btn__dark--js");
 
-const editor = document.querySelector(".editor__content--js");
-editor.value = resultLoad;
-
-const btnLoad = document.querySelector(".btn__dark--js");
-
-btnLoad.addEventListener('click', () => {
-    localStorage.setItem('entry', editor.value);
+load.addEventListener('click', () => {
+    editor__content.value = loadStarage;
 })
+
+console.log(load.value);
