@@ -4,10 +4,15 @@
 @import "modules/hello.scss";
 
 body {
-  background: $wtf;
-  color: #fff;
+  background: #fbbc58;
+  color: #095d6a;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+}
+
+.textarea {
+  background: #fdf6f0;
+  color: #f57b51;
 }

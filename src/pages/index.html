@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -145,9 +145,19 @@
     />
   </head>
   <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
+    <main class="main">
+      <h1 class="tittle">MÓJ ZAPISYWACZ</h1>
+      <p class="editor">
+        <label for="textarea"></label>
+        <textarea
+          class="textarea"
+          name="textarea"
+          id="textarea"
+          placeholder="Wpisz tekst który chcesz zapisać do localstorage..."
+        ></textarea>
+      </p>
+      <button class="save">ZAPISZ</button>
+      <button class="load">WCZYTAJ</button>
+    </main>
   </body>
 </html>
