@@ -2,6 +2,7 @@
 
 @import "_variables";
 @import "modules/hello.scss";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 
 body {
   background: #fbbc58;
@@ -10,9 +11,22 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
 }
-
-.textarea {
-  background: #fdf6f0;
-  color: #f57b51;
+.editor {
+  &__description {
+    display: block;
+    margin-bottom: 32px;
+    font-weight: 600;
+    font-size: 40px;
+  }
+  &__content {
+    background: #fdf6f0;
+    color: #f57b51;
+    height: 146px;
+    width: 416px;
+    border-style: none;
+    border-radius: 16px;
+    padding: 8px;
+  }
 }
