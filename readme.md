@@ -1,4 +1,4 @@
-![cover]()
+![cover](src\assets\watman.jpg)
 
 # Prosty zapisywacz ze szkolenia WTF: Co Ten Frontend 2
 
